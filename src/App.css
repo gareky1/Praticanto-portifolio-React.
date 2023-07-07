@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
@@ -24,13 +24,13 @@ body {
 }
 
 a {
-  color: var(--primaryColor);
+  color: var(--greyDark);
   text-decoration: none;
   transition: 0.5s;
 }
 
 a:hover {
-  color: var(--sliver);
+  color: var(--primaryColor);
 }
 
 p {
@@ -72,12 +72,16 @@ button {
   cursor: pointer;
 }
 
-.primaryBtn {
-  background: none;
-  border: 2px solid var(--primaryColor)
+.fontSize {
+  font-size: 20px;
 }
 
-/*-----------------Header------------*/
+.primaryBtn {
+  background: none;
+  border: 2px solid var(--primaryColor);
+}
+
+/*---------header-------------*/
 header {
   background-color: var(--headingColor);
   height: 10vh;
@@ -99,7 +103,7 @@ header a {
   display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   header .nav {
     display: none;
   }
@@ -112,8 +116,8 @@ header a {
 
   .toggle {
     display: block;
-    background: none;
     font-size: 25px;
+    background: none;
   }
 
   .hideMenu {
@@ -124,11 +128,9 @@ header a {
     width: 100%;
     background-color: var(--headingColor);
   }
-
 }
 
-/*-----------------Header------------*/
-
+/*---------header-------------*/
 section {
   height: 90vh;
   display: flex;
@@ -139,7 +141,7 @@ section {
   display: flex;
 }
 
-/*-----------------hero------------*/
+/*---------hero-------------*/
 .hero {
   position: relative;
 }
@@ -157,7 +159,7 @@ section {
   height: 90vh;
 }
 
-.heroContainer {
+.heroContent {
   max-width: 50%;
   margin: auto;
   text-align: center;
@@ -169,8 +171,7 @@ section {
   color: var(--primaryColor);
 }
 
-/*-----------------hero------------*/
-/*-----------------about------------*/
+/*---------hero-------------*/
 .heading {
   font-size: 30px;
   color: var(--primaryColor);
@@ -179,31 +180,32 @@ section {
   margin-bottom: 60px;
 }
 
+/*---------about-------------*/
 .about .primaryBtn {
   margin-left: 20px;
 }
 
 .about .heading {
   text-align: left;
+  margin: 0;
 }
 
-left {
+.left {
   width: 35%;
 }
 
-right {
+.right {
   width: 65%;
 }
 
-/*-----------------about------------*/
-
+/*---------about-------------*/
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
 
-/*-----------------services------------*/
+/*---------services-------------*/
 .services .box {
   background-color: var(--primaryBackground);
   padding: 35px;
@@ -216,5 +218,23 @@ right {
 .services h3 {
   margin-top: 20px;
 }
-
-/*-----------------services------------*/
+/*---------services-------------*/
+.grid4 {
+  grid-template-columns: repeat(4,1fr);
+  height: 50vh;
+  place-items: center;
+  text-align: center;
+}
+/*---------Couters-------------*/
+.counter{
+  margin-top: 80px;
+  position: relative;
+}
+.hero.counter::after{
+  background-image: url("../public/imagens/some-facts-bg.png");
+  height: 50vh;
+}
+.counter h1{
+  margin: 0;
+}
+/*---------Counters-------------*/

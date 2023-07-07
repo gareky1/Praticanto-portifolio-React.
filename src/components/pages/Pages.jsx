@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "../common/Header";
 import { Home } from "../home/Home";
 import { About } from "./About";
-import { Services } from "../home/Services";
+import { Services } from "./Services";
+
 
 export const Pages = () => {
   return (

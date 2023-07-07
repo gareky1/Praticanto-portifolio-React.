@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="hero">
       {home.map((val, i) => (
-        <div className="heroContainer">
+        <div className="heroContent ">
           <h3>{val.text}</h3>
           <h1>
             <TypewriterComponent

@@ -1,7 +1,6 @@
 import React from "react";
 import { about } from "../data/dummydata";
 import { Heading } from "../common/Heading";
-import cover from "../data/images/man.png";
 
 export const About = () => {
   return (
@@ -11,7 +10,7 @@ export const About = () => {
           {about.map((val, i) => (
             <>
               <div className="left">
-                <img src={cover} alt="" />
+                <img src={val.cover} alt="" />
               </div>
               <div className="rigth">
                 <Heading title="About Me" />
