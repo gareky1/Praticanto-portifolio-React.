@@ -152,18 +152,46 @@ section {
   background-image: url("../public/imagens/home-bg.png");
   background-size: cover;
   background-attachment: fixed;
-  z-index:-1;
+  z-index: -1;
   width: 100%;
   height: 90vh;
 }
-.heroContainer{
+
+.heroContainer {
   max-width: 50%;
   margin: auto;
   text-align: center;
 }
-.hero h1{
+
+.hero h1 {
   font-size: 60px;
   font-weight: 600;
   color: var(--primaryColor);
 }
+
 /*-----------------hero------------*/
+/*-----------------about------------*/
+.heading {
+  font-size: 30px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about .primaryBtn {
+  margin-left: 20px;
+}
+
+.about .heading {
+  text-align: left;
+}
+
+left {
+  width: 35%;
+}
+
+right {
+  width: 65%;
+}
+/*-----------------about------------*/
