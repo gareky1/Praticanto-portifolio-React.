@@ -194,4 +194,27 @@ left {
 right {
   width: 65%;
 }
+
 /*-----------------about------------*/
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/*-----------------services------------*/
+.services .box {
+  background-color: var(--primaryBackground);
+  padding: 35px;
+}
+
+.services i {
+  color: var(--primaryColor);
+}
+
+.services h3 {
+  margin-top: 20px;
+}
+
+/*-----------------services------------*/
