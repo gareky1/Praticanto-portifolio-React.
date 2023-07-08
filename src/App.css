@@ -218,23 +218,89 @@ section {
 .services h3 {
   margin-top: 20px;
 }
+
 /*---------services-------------*/
 .grid4 {
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   height: 50vh;
   place-items: center;
   text-align: center;
 }
+
 /*---------Couters-------------*/
-.counter{
+.counter {
   margin-top: 80px;
   position: relative;
 }
-.hero.counter::after{
+
+.hero.counter::after {
   background-image: url("../public/imagens/some-facts-bg.png");
   height: 50vh;
 }
-.counter h1{
+
+.counter h1 {
   margin: 0;
 }
+
 /*---------Counters-------------*/
+/*---------article-------------*/
+article {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+article img {
+  width: 100%;
+  height: 100%;
+}
+
+article .box {
+  position: relative;
+  transition: 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryColor);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+article .box:hover .overlay,
+article .box:hover .overlay::after {
+  opacity: 1;
+}
+
+.catButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.catButton button{
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+/*---------article-------------*/

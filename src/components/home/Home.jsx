@@ -3,6 +3,7 @@ import { Hero } from "./Hero";
 import { About } from "../pages/About";
 import { Services } from "../pages/Services";
 import { Counter } from "../pages/Counter";
+import { Portfolio } from "../pages/Portfolio";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <About />
       <Services />
       <Counter />
+      <Portfolio />
     </>
   );
 };
