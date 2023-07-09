@@ -11,16 +11,16 @@ export const Blog = () => {
           <div className="content grid3">
             {blog.map((item) => {
               return (
-                <div className="box">
-                  <div className="img">
-                    <img src={item.cover} alt="" />
+                <div className="box" data-aos="flip-left">
+                  <div className="img" data-aos="flip-up">
+                    <img src={item.cover} alt="" data-aos="flip-down" />
                   </div>
                   <div className="text">
-                    <h3>{item.title}</h3>
-                    <label>
+                    <h3 data-aos="flip-right">{item.title}</h3>
+                    <label data-aos="flip-left">
                       By {item.author} {item.date}
                     </label>
-                    <p>{item.desc}</p>
+                    <p data-aos="fade-up-right">{item.desc}</p>
                   </div>
                 </div>
               );

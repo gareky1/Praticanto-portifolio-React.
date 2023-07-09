@@ -7,7 +7,7 @@ export const Hero = () => {
     <section className="hero">
       {home.map((val, i) => (
         <div className="heroContent ">
-          <h3>{val.text}</h3>
+          <h3 data-aos="fade-right">{val.text}</h3>
           <h1>
             <TypewriterComponent
               options={{
@@ -16,8 +16,10 @@ export const Hero = () => {
               }}
             />
           </h1>
-          <p>{val.desc}</p>
-          <button className="primaryBtn">Download CV</button>
+          <p data-aos="fade-left">{val.desc}</p>
+          <button className="primaryBtn" data-aos="fade-up-right">
+            Download CV
+          </button>
         </div>
       ))}
     </section>
