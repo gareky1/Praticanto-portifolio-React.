@@ -86,8 +86,7 @@ button {
 
 /*---------header-------------*/
 header {
-  background-color: var(--headingColor);
-  height: 10vh;
+  background-color: var(--primaryBackground);
   line-height: 10vh;
   position: sticky;
   top: 0;
@@ -182,37 +181,50 @@ section {
   text-align: center;
   margin-bottom: 30px;
 }
+.primaryBtn:hover {
+  background-color: var(--primaryColor);
+}
 
 /*---------about-------------*/
+.about .flex {
+  justify-content: center;
+  align-items: center;
+}
+
 .about .heading {
   margin-top: 40px;
-}
-
-.about .primaryBtn {
-  margin-left: 20px;
-}
-
-.about .heading {
   text-align: left;
   margin: 0;
 }
 
+.about .right h2 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
 .left {
   width: 35%;
+  display: flex;
 }
 
 .right {
   width: 65%;
+  justify-content: center;
+  text-align: justify;
 }
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width: 1250px) {
   .about .flex {
     flex-direction: column;
   }
+  
 
   .left {
     width: 90%;
     justify-content: center;
+    margin-bottom: 100px;
   }
 }
 
@@ -292,7 +304,7 @@ article .box {
   z-index: 2;
   opacity: 0;
 }
-.btn-img{
+.btn-img {
   background-color: #212222;
 }
 
@@ -365,7 +377,6 @@ article .box:hover .overlay::after {
 }
 
 .testimonials img {
-
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -420,23 +431,30 @@ label {
   border-radius: 5px;
 }
 
-
 /*---------contact-------------*/
 /*---------footer-------------*/
 footer {
   text-align: center;
   background-color: var(--primaryBackground);
   padding: 40px;
-  margin-top: 50px;
+  margin-top: 200px;
 }
 
 footer i {
-  margin: 5px;
-  color: var(--primaryColor);
+  margin: 5px !important; 
+  color: var(--primaryColor) !important;
+  opacity: 1 !important;
+}
+footer p {
+  opacity: 1 !important;
+  position: relative;
+  left: 10%;
 }
 
+
+
 /*---------footer-------------*/
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .hero {
     height: 60vh;
   }
@@ -468,5 +486,4 @@ footer i {
   .grid4 {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }

@@ -12,11 +12,10 @@ export const About = () => {
               <div className="left">
                 <img src={val.cover} alt="" data-aos="fade-down-right" />
               </div>
-              <div className="rigth" data-aos="fade-down-left">
-                <Heading title="About Me" />
+              <div className="right" data-aos="fade-down-left">
+                <Heading title="ABOUT ME" />
                 <p>{val.desc}</p>
                 <p>{val.desc1}</p>
-                <button>Dowload CV</button>
                 <button className="primaryBtn">Dowload CV</button>
               </div>
             </>
