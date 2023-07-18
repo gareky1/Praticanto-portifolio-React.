@@ -80,13 +80,13 @@ button {
 }
 
 .primaryBtn {
-  background: none;
-  border: 2px solid var(--primaryColor);
+  background: none !important;
+  border: 2px solid var(--primaryColor) !important;
 }
 
 /*---------header-------------*/
 header {
-  background-color: var(--primaryBackground);
+  background-color: var(--headingColor);
   line-height: 10vh;
   position: sticky;
   top: 0;
@@ -219,7 +219,6 @@ section {
   .about .flex {
     flex-direction: column;
   }
-  
 
   .left {
     width: 90%;
@@ -304,6 +303,7 @@ article .box {
   z-index: 2;
   opacity: 0;
 }
+
 .btn-img {
   background-color: #212222;
 }
@@ -320,6 +320,14 @@ article .box {
   transition: 0.5s;
   z-index: -1;
 }
+@media screen and (max-width: 520) {
+  .overlay h3 {
+    font-size: 10px !important;
+  }
+  .overlay span {
+    font-size: 10px !important;
+  }
+}
 
 article .box:hover .overlay,
 article .box:hover .overlay::after {
@@ -327,10 +335,10 @@ article .box:hover .overlay::after {
 }
 
 .catButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
+  margin-bottom: 30px;
+}
+.catButton .primaryBtn {
+  margin-bottom: 30px;
 }
 
 .catButton button {
@@ -441,7 +449,7 @@ footer {
 }
 
 footer i {
-  margin: 5px !important; 
+  margin: 5px !important;
   color: var(--primaryColor) !important;
   opacity: 1 !important;
 }
@@ -450,8 +458,6 @@ footer p {
   position: relative;
   left: 10%;
 }
-
-
 
 /*---------footer-------------*/
 @media screen and (max-width: 768px) {
