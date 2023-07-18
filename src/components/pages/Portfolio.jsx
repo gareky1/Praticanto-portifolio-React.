@@ -24,6 +24,7 @@ export const Portfolio = () => {
     setTempdata((items) => [1, ...tempData]);
     return setModel(true);
   };
+
   return (
     <>
       <article>

@@ -24,7 +24,7 @@ body {
 }
 
 a {
-  color: var(--greyDark) !important;
+  color: var(--white) !important;
   text-decoration: none !important;
   transition: 0.5s !important;
 }

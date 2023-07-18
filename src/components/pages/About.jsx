@@ -3,6 +3,7 @@ import { about } from "../data/dummydata";
 import { Heading } from "../common/Heading";
 
 export const About = () => {
+
   return (
     <>
       <section className="about">
@@ -16,7 +17,11 @@ export const About = () => {
                 <Heading title="ABOUT ME" />
                 <p>{val.desc}</p>
                 <p>{val.desc1}</p>
-                <button className="primaryBtn">Dowload CV</button>
+                <button className="primaryBtn" >
+                  <a href="../CV/PDF-TESTE.pdf" download="mycv.pdf">
+                  Dowload CV
+                  </a>
+                </button>
               </div>
             </>
           ))}

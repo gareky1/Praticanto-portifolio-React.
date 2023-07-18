@@ -18,7 +18,9 @@ export const Hero = () => {
           </h1>
           <p data-aos="fade-left">{val.desc}</p>
           <button className="primaryBtn" data-aos="fade-up-right">
-            Download CV
+            <a href="../CV/PDF-TESTE.pdf" download="mycv.pdf">
+              Dowload CV
+            </a>
           </button>
         </div>
       ))}
