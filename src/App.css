@@ -82,6 +82,7 @@ button {
 .primaryBtn {
   background: none !important;
   border: 2px solid var(--primaryColor) !important;
+  border-radius: 0 !important;
 }
 
 /*---------header-------------*/
@@ -182,7 +183,7 @@ section {
   margin-bottom: 30px;
 }
 .primaryBtn:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--primaryColor) !important;
 }
 
 /*---------about-------------*/
@@ -225,6 +226,9 @@ section {
     justify-content: center;
     margin-bottom: 100px;
   }
+  .right {
+    margin-bottom: 50px;
+  }
 }
 
 /*---------about-------------*/
@@ -265,7 +269,7 @@ section {
 
 .hero.counter::after {
   background-image: url("../public/imagens/some-facts-bg.png");
-  height: 50vh;
+  height: 100vh;
 }
 
 .counter h1 {
@@ -303,11 +307,6 @@ article .box {
   z-index: 2;
   opacity: 0;
 }
-
-.btn-img {
-  background-color: #212222;
-}
-
 .overlay::after {
   content: "";
   position: absolute;
@@ -320,13 +319,9 @@ article .box {
   transition: 0.5s;
   z-index: -1;
 }
-@media screen and (max-width: 520) {
-  .overlay h3 {
-    font-size: 10px !important;
-  }
-  .overlay span {
-    font-size: 10px !important;
-  }
+
+.overlay h3 {
+  font-size: calc(1rem + 0.6vw) !important;
 }
 
 article .box:hover .overlay,
@@ -462,7 +457,7 @@ footer p {
 /*---------footer-------------*/
 @media screen and (max-width: 768px) {
   .hero {
-    height: 60vh;
+    height: 100vh;
   }
 
   .heroContainer {
@@ -470,13 +465,14 @@ footer p {
   }
 
   .hero::after {
-    height: 60vh;
+    height: 100vh;
   }
 
   section {
     height: auto;
     padding-top: 50px;
   }
+  
 
   .contact .flexsb,
   .about .flex {
@@ -491,5 +487,10 @@ footer p {
   .grid3,
   .grid4 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

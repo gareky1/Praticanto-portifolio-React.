@@ -67,7 +67,7 @@ export const Portfolio = () => {
                   <span>{items.name}</span>
                 
                   <button
-                    className="btn-img"
+                    className=" btn btn-secondary"
                     onClick={() =>
                       getData(
                         items.imgSrc,
